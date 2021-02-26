@@ -8,7 +8,7 @@ Feature: Validate the Login functionality test scenarios
 		 Then User should be able to successfully login into the application
 		 Then User should be able to successfully logout from the application
 		 
-
+	@Regression
 	Scenario Outline: Validate user is not able to login using InValid Credentials
 		Given User have "Invalid" Credentials username <Username> and password <Password>
 		 When User enters the Credentials in the Login Screen
