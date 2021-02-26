@@ -1,0 +1,4 @@
+com\test\base\Base.class
+com\test\pageObjects\LoginScreen.class
+com\test\pageObjects\ProductDetailScreen.class
+com\test\pageObjects\ProductsScreen.class

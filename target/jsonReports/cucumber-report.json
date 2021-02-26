@@ -1,0 +1,757 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-26T03:55:53.579Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24583754600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate user is able to login using Valid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-able-to-login-using-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1365820200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 530876400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User have \"Valid\" Credentials username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Valid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3629250500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3630498300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to successfully login into the application",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_successfully_login_into_the_application()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2350838400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to successfully logout from the application",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_successfully_logout_from_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-26T03:56:29.872Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13750960400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validate user is not able to login using InValid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-not-able-to-login-using-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1016851100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4987100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have \"Invalid\" Credentials username \"invalid_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"invalid_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 69
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4291421600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1859012700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Username and password do not match any user in this service.\" on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-26T03:56:50.817Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14141807300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validate user is not able to login using InValid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-not-able-to-login-using-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1226528600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have \"Invalid\" Credentials username \"standard_user\" and password \"invalid_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"invalid_sauce\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4438709000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1809919300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Username and password do not match any user in this service.\" on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-26T03:57:12.489Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13474905200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate user is not able to login using InValid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-not-able-to-login-using-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1185471700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1989800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have \"Invalid\" Credentials username \"\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4035542300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cUsername [is required]\u003e but was:\u003cUsername [and password do not match any user in this service.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)\r\n\tat ✽.User should see error message \"Username and password do not match any user in this service.\" on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)\r\n",
+              "duration": 1603213900,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Username and password do not match any user in this service.\" on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-26T03:57:32.862Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13806871400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Validate user is not able to login using InValid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-not-able-to-login-using-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1343755000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3992600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have \"Invalid\" Credentials username \"standard_user\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3860557400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Password is required]\u003e but was:\u003c[Username and password do not match any user in this service.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)\r\n\tat ✽.User should see error message \"Username and password do not match any user in this service.\" on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)\r\n",
+              "duration": 1990947500,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Username and password do not match any user in this service.\" on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-26T03:57:53.908Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13264314100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Validate user is not able to login using InValid Credentials",
+        "description": "",
+        "id": "validate-the-login-functionality-test-scenarios;validate-user-is-not-able-to-login-using-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1406581200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2992500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have \"Invalid\" Credentials username \"\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4078782500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cUsername [is required]\u003e but was:\u003cUsername [and password do not match any user in this service.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)\r\n\tat ✽.User should see error message \"Username and password do not match any user in this service.\" on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)\r\n",
+              "duration": 1814714200,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Username and password do not match any user in this service.\" on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Login functionality test scenarios",
+    "description": "",
+    "id": "validate-the-login-functionality-test-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login_Feature.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-26T03:58:14.502Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13588698500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate user is able to login using Valid Credentials and Navigate to Products details page",
+        "description": "",
+        "id": "validate-the-product-details-page-navigation;validate-user-is-able-to-login-using-valid-credentials-and-navigate-to-products-details-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1275123600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1995700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User have \"Valid\" Credentials username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Valid\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_have_valid_credentials_username_and_password(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3939895500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the Credentials in the Login Screen",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_enters_the_credentials_in_the_login_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3614795000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to successfully login into the application",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_successfully_login_into_the_application()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 281248500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to see the 1st product as \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_see_the_1st_product_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205446400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to see the 2nd product as \"Sauce Labs Bike Light\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Bike Light\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_see_the_2st_product_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2314516200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to successfully logout from the application",
+            "match": {
+              "location": "com.test.stepDefinitions.StepDefinitions.user_should_be_able_to_successfully_logout_from_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Product Details Page Navigation",
+    "description": "",
+    "id": "validate-the-product-details-page-navigation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Product_Feature.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

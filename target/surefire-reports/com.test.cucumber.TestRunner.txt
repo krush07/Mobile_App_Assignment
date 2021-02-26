@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.test.cucumber.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 168.82 s <<< FAILURE! - in com.test.cucumber.TestRunner
+Validate user is not able to login using InValid Credentials #3(Validate the Login functionality test scenarios)  Time elapsed: 20.352 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Username [is required]> but was:<Username [and password do not match any user in this service.]>
+
+Validate user is not able to login using InValid Credentials #4(Validate the Login functionality test scenarios)  Time elapsed: 21.058 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Password is required]> but was:<[Username and password do not match any user in this service.]>
+
+Validate user is not able to login using InValid Credentials #5(Validate the Login functionality test scenarios)  Time elapsed: 20.562 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Username [is required]> but was:<Username [and password do not match any user in this service.]>
+

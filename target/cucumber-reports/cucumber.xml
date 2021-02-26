@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="166.59">
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is able to login using Valid Credentials" time="36.247">
+        <system-out>
+            <![CDATA[Given User have "Valid" Credentials username "standard_user" and password "secret_sauce".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should be able to successfully login into the application.........passed
+Then User should be able to successfully logout from the application........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is not able to login using InValid Credentials" time="20.929">
+        <system-out>
+            <![CDATA[Given User have "Invalid" Credentials username "invalid_user" and password "secret_sauce".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should see error message "Username and password do not match any user in this service." on Login Screen.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is not able to login using InValid Credentials 2" time="21.631">
+        <system-out>
+            <![CDATA[Given User have "Invalid" Credentials username "standard_user" and password "invalid_sauce".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should see error message "Username and password do not match any user in this service." on Login Screen.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is not able to login using InValid Credentials 3" time="20.314">
+        <failure message="expected:&lt;Username [is required]&gt; but was:&lt;Username [and password do not match any user in this service.]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given User have "Invalid" Credentials username "" and password "secret_sauce".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should see error message "Username and password do not match any user in this service." on Login Screen.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Username [is required]> but was:<Username [and password do not match any user in this service.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)
+	at ✽.User should see error message "Username and password do not match any user in this service." on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is not able to login using InValid Credentials 4" time="21.01">
+        <failure message="expected:&lt;[Password is required]&gt; but was:&lt;[Username and password do not match any user in this service.]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given User have "Invalid" Credentials username "standard_user" and password "".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should see error message "Username and password do not match any user in this service." on Login Screen.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Password is required]> but was:<[Username and password do not match any user in this service.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)
+	at ✽.User should see error message "Username and password do not match any user in this service." on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate the Login functionality test scenarios" name="Validate user is not able to login using InValid Credentials 5" time="20.572">
+        <failure message="expected:&lt;Username [is required]&gt; but was:&lt;Username [and password do not match any user in this service.]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given User have "Invalid" Credentials username "" and password ""...........passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should see error message "Username and password do not match any user in this service." on Login Screen.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Username [is required]> but was:<Username [and password do not match any user in this service.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.test.stepDefinitions.StepDefinitions.user_should_see_error_message_on_login_screen(StepDefinitions.java:99)
+	at ✽.User should see error message "Username and password do not match any user in this service." on Login Screen(file:///C:/Users/Subrat/eclipse-workspace/AppAssignment/src/test/resources/features/Login_Feature.feature:15)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate the Product Details Page Navigation" name="Validate user is able to login using Valid Credentials and Navigate to Products details page" time="25.234">
+        <system-out>
+            <![CDATA[Given User have "Valid" Credentials username "standard_user" and password "secret_sauce".passed
+When User enters the Credentials in the Login Screen........................passed
+Then User should be able to successfully login into the application.........passed
+And User should be able to see the 1st product as "Sauce Labs Backpack".....passed
+And User should be able to see the 2nd product as "Sauce Labs Bike Light"...passed
+Then User should be able to successfully logout from the application........passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
